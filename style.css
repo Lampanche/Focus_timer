@@ -1,0 +1,183 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    font-size: 62.5%;
+    --text-timer-color: rgba(50, 50, 56, 1);
+    --bg-card-sounds: rgba(225, 225, 230, 1);
+    --bg-card-sounds-select: rgba(2, 121, 157, 1);
+    --color-image-select: white;
+    --border-input-button:  rgb(77, 77, 87);
+    --h1-color: rgba(66, 214, 145, 0.788);
+    --bg-button-selected: rgb(208, 208, 212);
+    --bg-ok: rgba(175, 17, 17, 0.808);
+}
+
+body
+{
+    font-family: 'roboto', sans-serif;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+
+}
+
+main
+{
+    display: flex;
+    gap: 19.2rem;
+    justify-content: center;
+}
+
+.settings
+{
+    background-color: var(--bg-card-sounds-select);
+    border-radius: 3rem; 
+    padding: 3rem;
+    box-shadow: 0 2rem 3rem rgba(21, 21, 24, 0.4);
+
+}
+
+h1
+{
+    color: var(--bg-card-sounds);
+    margin-bottom: 1rem;
+}
+
+label
+{
+    color: var(--bg-card-sounds);
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#set-minutes
+{
+    border-radius: 1.8rem;
+    border: none;
+    padding: 1rem;
+    width: 10rem;
+    background-color: var(--bg-card-sounds);
+    font-family: 'roboto', sans-serif;   
+
+}
+
+#set-minutes::placeholder
+{
+    color: var(--text-timer-color);
+    font-family: 'roboto', sans-serif;
+}
+
+#set-minutes:focus
+{
+    outline:.2rem solid var(--border-input-button);    
+}
+
+.button-set
+{
+    width: 10rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1.8rem;
+    font-family: 'roboto', sans-serif;
+    background-color: var(--bg-card-sounds);
+    cursor: pointer;
+    align-self: center;
+    border: none;
+    color: var(--text-timer-color);
+       
+}
+
+.button-set:hover
+{
+    background-color: var(--bg-button-selected);
+}
+
+.timer
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem;
+    justify-content: center;
+}
+
+.time
+{
+    display: flex;
+    font-size: 12.67rem;
+    color: var(--text-timer-color);   
+}
+
+.timer .controls button
+{
+    background:none;
+    border: none;
+    cursor: pointer;
+}
+
+.controls
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.reset-time
+{
+    display: flex;
+    justify-content: center;
+}
+
+.timer .reset-time .button-reset-time
+{
+    width: 10rem;
+    padding: 1rem;
+
+    border-radius: 1.8rem;
+
+    background-color: var(--bg-card-sounds);
+    font-family: 'roboto', sans-serif;
+    color: var(--text-timer-color);
+
+    cursor: pointer;
+    border: none;
+}
+
+.timer .reset-time .button-reset-time:hover
+{
+    background-color: var(--bg-button-selected);
+}
+
+.sounds
+{
+    display: grid;
+    grid-template-areas: 
+    "a b"
+    "c d" ;
+    gap: 3.2rem 3.2rem;
+  
+}
+
+.sounds button
+{
+    background-color: var(--bg-card-sounds);
+    border-radius: 2.4rem;
+    height: 15.2rem;
+    width: 13.8rem;
+    border: none;
+    cursor: pointer;
+}
+
+.hide
+{
+    display: none;
+}
